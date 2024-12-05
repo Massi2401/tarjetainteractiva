@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Interactivas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Tamaño fijo para las imágenes */
+            object-fit: cover; /* Mantiene la proporción de las imágenes */
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .card-content p {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: #555;
+            font-weight: bold;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .card-footer {
+            background-color: #eee;
+            padding: 15px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+
+        .card:hover .card-footer {
+            background-color: #6c63ff;
+        }
+
+        .button {
+            display: block;
+            padding: 10px 15px;
+            background-color: #6c63ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .card:hover .button {
+            background-color: #5549c6;
+        }
+
+        .price:hover {
+     color: #6c63ff;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Diseña las tarjetas</h1>
+        <p>Massiel Gonzale.</p>
+        <div class="cards">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="https://do.kennethcolelatino.com/cdn/shop/products/KCWGC0016103_BLACK_1.jpg?v=1691680549" alt="Reloj">
+                <div class="card-content">
+                    <h3>Luxury Watch</h3>
+                    <p>High-quality watches</p>
+                    <div class="price">$40</div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/323356025/UR/EQ/WS/192140499/safeimagekit-resized-img-3--500x500.png" alt="Zapatos">
+                <div class="card-content">
+                    <h3>Running Shoes</h3>
+                    <p>Comfort and style</p>
+                    <div class="price">$60</div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF7nQieusCvupv8OWP68ShhVsMTB0jlZdHhg&s" alt="Camisa">
+                <div class="card-content">
+                    <h3>Casual Shirt</h3>
+                    <p>Comfortable fabric</p>
+                    <div class="price">$15</div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
